@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="student-info">
+            <img src="student-photo.jpg" alt="Student Photo">
+            <div>
+                <h1>Student Name: Mesaybkh</h1>
+                <p>Grade: 5</p>
+                <p>Section: A</p>
+                <p>Class Number: 12</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="academic-info">
+            <h2>Grade Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Test 1</th>
+                        <th>Test 2</th>
+                        <th>Test 3</th>
+                        <th>Final Exam</th>
+                        <th>Average</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maths</td>
+                        <td>28/30</td>
+                        <td>26/30</td>
+                        <td>29/30</td>
+                        <td>90/100</td>
+                        <td>87%</td>
+                        <td>3/45</td>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>Biology</td>
+                        <td>33/30</td>
+                        <td>30/30</td>
+                        <td>3/30</td>
+                        <td>90/100</td>
+                        <td>87%</td>
+                        <td>3/45</td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="performance-overview">
+            <h2>Performance Overview</h2>
+            <div class="performance-graph">
+                <!-- Graph placeholder (You can use a chart library like Chart.js here) -->
+                <p>Performance graph goes here.</p>
+            </div>
+        </section>
+
+        <section class="school-announcements">
+            <h2>School Announcements</h2>
+            <ul>
+                <li>Exam Schedule: September 15, 2024</li>
+                <li>Parents Meeting: October 20, 2024</li>
+                <!-- More announcements as needed -->
+            </ul>
+        </section>
+
+        <section class="events-competitions">
+            <h2>Events and Competitions</h2>
+            <ul>
+                <li>Science Fair: September 25, 2024</li>
+                <li>Math Olympiad: October 5, 2024</li>
+                <!-- More events as needed -->
+            </ul>
+        </section>
+
+        <section class="user-support">
+            <h2>User Support</h2>
+            <ul>
+                <li><a href="https://t.me/yourtelegramlink">Telegram Group</a></li>
+                <li>Call Center: +123456789</li>
+                <li>Email: support@school.com</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 "School Name." All rights reserved.</p>
+    </footer>
+	<script>
+	document.querySelectorAll('h2').forEach((header) => {
+    header.addEventListener('click', () => {
+        const section = header.nextElementSibling;
+        section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    });
+});
+	</script>
+</body>
+</html>
